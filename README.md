@@ -1,3 +1,11 @@
+# Notes
+
+* changed cmake generator to msvc
+* installed glfw3 dependency using vcpkg.  See [this branch](https://github.com/Kartiku/vcpkg/tree/luajit-glfw3) for changes.  Required compiling the a specific version of glfw otherwise all examples were broken
+
+----
+original readme below
+
 # LuaJIT-ImGui
 
 ![sample](sample.png)
