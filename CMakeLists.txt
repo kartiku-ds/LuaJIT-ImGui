@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 if(WIN32) #to mingw work as all the others
   set(CMAKE_SHARED_LIBRARY_PREFIX "")
   # set VCPKG_TARGET_TRIPLET must be before include(vcpkg.cmake)
-  set(VCPKG_TARGET_TRIPLET "x64-windows-static")
+  set(VCPKG_TARGET_TRIPLET "x64-windows")
   include("C:/d/vcpkg/scripts/buildsystems/vcpkg.cmake")
 endif(WIN32)
 #general settings
