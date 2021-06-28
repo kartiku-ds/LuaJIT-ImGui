@@ -1,7 +1,7 @@
 [submodule "cimgui"]
 	path = cimgui
 	url = https://github.com/Kartiku/cimgui.git
-	branch = font-roboto
+	branch = luajit-imgui
 [submodule "cimplot"]
 	path = cimplot
 	url = https://github.com/cimgui/cimplot.git
