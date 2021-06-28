@@ -10,7 +10,7 @@ lj_glfw.setErrorCallback(function(error,description)
 end)
 
 lj_glfw.init()
-local window = lj_glfw.Window(700,500)
+local window = lj_glfw.Window(2000,1500)
 window:makeContextCurrent() 
 
 --choose implementation
@@ -20,7 +20,10 @@ local ig_impl = ig.Imgui_Impl_glfw_opengl3() --standard imgui opengl3 example
 
 local igio = ig.GetIO()
 igio.ConfigFlags = ig.lib.ImGuiConfigFlags_NavEnableKeyboard + igio.ConfigFlags
-
+--igio.FontGlobalScale = 5
+local FontsAt = ig.GetIO().Fonts
+FontsAt:AddFontFromFileTTF("C:\\d\\LuaJIT-ImGui\\cimgui\\imgui\\misc\\fonts\\Roboto-Medium.ttf", 32);
+--FontsAt:GetTexDataAsAlpha8()
 
 ig_impl:Init(window, true)
 
